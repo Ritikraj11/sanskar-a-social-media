@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Server",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+    "std=c++17",
+    "-g",
+    "server.cpp",
+    "-o",
+    "server.exe"
+],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Build the C++ server with SQLite and Winsock"
+      }
+    ]
+  }
+  
+  
